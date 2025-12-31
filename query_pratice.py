@@ -42,7 +42,7 @@ class Pdf_template(SQLModel, table=True):
             nullable=False,comment="Record last updated timestamp"
             ))
     created_by: int =Field(description="Pdf template who created the record")
-    modified_by: int =Field(description="Pdf template who last modified the record")
+    modified_by: int =Field(description="Pdf template who last modified")
 
 class Email_template(SQLModel, table=True):
     __tablename__ = "email_template"
